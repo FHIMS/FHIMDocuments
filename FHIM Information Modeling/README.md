@@ -1,2 +1,2 @@
-# FHIM Information Modeling
+#Information Modeling
 Repository for FHIM charter, process documents, meeting minutes, etc.
