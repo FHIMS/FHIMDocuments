@@ -1,0 +1,20 @@
+Mead created an extended CDA R2 for ICSR
+It shows that it's possible to do this.
+The question is what is the way forward?  Declare that CDA does what we need, except for the extensions?  Work with FHIM and make changes to it so that it supports adverse event reporting? 
+
+Can we import MIF into the FHIM?
+Mead will send a Visio diagrams 
+
+It's a CDA document with more stuff grafted on it. The author has more stuff on it.  
+In the R_InvestigationSubject CMET, the record target isn't just a patient
+
+Page 6 is the adverse event assessment.  on the upper right is the causality assessment, which have links to opinions about what might have caused the adverse event.
+Defects are things noticed about a product before it's used by a patient.
+
+NEXT STEPS
+----------
+a) Mead will send schemas he's built
+b) Galen to examine the model and schemas
+c) Mead will walk us through the CDA Implmentation Guide that he prepared
+d) Get XMI from Mead
+e) Look into importing ICSR and CPM MIF (certain CMETS only)

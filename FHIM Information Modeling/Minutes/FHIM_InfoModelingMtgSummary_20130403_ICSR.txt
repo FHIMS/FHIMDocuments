@@ -1,0 +1,41 @@
+A ProductInstance can be a lot or an individual product.  The "member" roles allow you to walk up or down the hierarchy, so you can tell which instance is part of what lot.
+The product event class is to explictly model the production and transport process
+The ingredient role allows one product to be an ingredient of another.
+The part role is similar in that it allows one product to be a part of another.
+Notice that the container structure is recursive (using Content3), so one container can contain other containers.
+Content2 is saying that products are contained in containers.
+
+Then, product instances are related to Product Kind.
+
+Product Adminsterable: 
+
+CCDA has a substance administration, which has a consumable (participation) which has a manufactured product (role), which could be manufacturedLabledDrug or manufacturedMaterial.  A) they mix material kind with material instance, which has a lot number, which isn't needed for ordering.  b) they don't have drug class or ingredients, which are needed for adverse events.
+
+-----  ICSR  -----
+
+Investigations are the subject of various reports, and the ControlActEvent handles the relationship between the Investigations and Reports.
+The ControlActEvent is the Report.  The ControlAct is primarily identifying the senders.  Secondarily, it identifies the other version of the Reports or other investigations.
+The Document class is additional documents such as an autopsy report or a study identifying adverse events found on the same or similar items.
+Person is the reporter.  Person2 / Animal is the subject (patient).  Role2 defines how these two are related (if at all)
+Investigation Assessments describe conclusions/
+ObservationCharacteristics and ObservationEvent overlap each other.  ObservationCharacteristics are used to generically handle all the items on the MedWatch paper form.  Things like pre-1938 drug, etc.  These are essentially just observations and could be handled by the generic ObservationEvent.
+Sometimes the subject could be a group of persons, so the Person2 class has a quantity - this could be better handled by a Group class
+Also captures informatin about persons related to the subject (i.e., mother takes drug and fetus is harmed).  This is handled by the Role class.  The Role class also captures adverse events experienced by brother/sister (for vaccines).
+You can also capture whether the subject is part of a research study (via the PrimaryRole).
+[In the ProductReportingReleventInformation CMET, the Procedure class is used for insertion/extraction of the medical device.  Supply is generally used for devices.  The Observation is used for reaction/severity information as well as lab tests, also age, current diseases, etc. are Observations.
+SubstanceAdministration can be for concommitant drugs as well as the suspect drug.]
+The CausalityAssessment provides information linking an adverse event with the administration or use of a particular product
+The id that in the AdverseEventReference class is the id of the [ProductReportingReleventInformation CMET] Observation 
+
+The official regulatory agency definition of Adverse Event is a bit different from the one that doctors use when they think about "adverse reaction".  The model needs to clearly grasp that.
+
+------
+
+The FHIM adverse event model doesn't tie together the report and the investigation
+[the idea of investigation came from CDC's notifiable conditions.]
+
+
+
+
+
+Participations always have their fat end on the Act, and the pointy end on the Role.

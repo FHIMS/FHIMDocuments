@@ -1,0 +1,69 @@
+January 9, 2015
+
+Attendees
+
+Galen Mulrooney
+Jay Lyle
+Alberto Llanes
+Robert C. Crawford
+David Bass
+Don Lees
+Ioana Singureanu
+Raisa Ionin
+John Forrester
+Huma Munir
+Sarah Aderholdt
+Sean Muir
+Steve Wagner
+Susan E. Campbell
+Susan Matney
+
+Updates
+
+Tuesday FHIM and FHIR and how approaching supporting FHIR within MDHT and discussion after that. Get info from Steve.
+
+I updated on Open Group and FHIM to NIEM exploratory.
+
+Terminology Update
+
+Very close to finishing vital signs qualifiers on Wednesday. May finish next week. We have VA requirements and looking to get DoD requirements we do not have yet. VA's begun work on how to update vital qualifiers updates in CCDA. Will be reviewing the health concern model in San Antonio (HL7 Session).
+
+Galen Modelling Session
+
+Starting Modelling the Care Plan Domain
+
+He already has some populated since he did some work about 2 years ago as part of transitions of care (ToC). FHIM::CarePlan::CarePlan  Note: FHIR has a CarePlan resource that is almost identical to what we already have although FHIR has a CarePlana and CarePlan2. In one of them CarePlan is a pointer to the goal resource.
+
+Regarding our model, we might want to subtype Goal. Sub-typing goal types might help differentiate between kinds of goals, e.g. patient authored vs. provider authored goals.
+
+Need separate statement of patient's goals in their words which may be translated to clinical goals.
+
+What is the relationship between Care Team based care and Care Plan? The Care Plan definitely is necessary to support team-based care. Previous efforts have attempted to take each provider's care plan and merge them together but ran into implementation issues (with CDA).
+
+VA has a concept of Care Plan Episode - and each will have a Care Plan Manager.
+
+HL7 and LCC are currently looking at a snapshot in time, whereas VA has a longitudinal view.
+
+HL7 views the patient as part of one or more individual provider's systems, whereas the LCC model look at it more from the standpoint of the patient.
+
+Care plan is about the information repository and sharing data, not care planning.
+
+There are logical aspects of the movement of data which may be helpful to the model.
+
+We looked at S&I Framework's Longitudinal Care Planning - Animated Final.pptx
+
+LTPAC is a subset of LCC
+LCC is US centric whereas HL7's plan group is more internationally based. This causes small disconnects.
+
+www.cmsociety.org
+
+Susan Matney defines a goal as instantiated observations for the future. CDA folks asked LOINC for separate codes for care plan, plans of care, etc., but the industry thought this was too confusing.
+
+Plans of care are developed by each specialty.
+
+Due to FHIR Connectathon Galen is attending we might not be having the call next week.
+We wont be having the FHIM meeting the following week due to the HL7 meeting.
+Our next meeting might be the 30th.
+
+
+

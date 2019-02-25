@@ -1,0 +1,47 @@
+2014-12-05 FHIM Meetings
+
+Roster from GoToWebinar
+Galen Mulrooney
+Alberto Llanes
+Crawford, Robert C.
+David Bass
+Ioana Singureanu
+Jay
+Rob McClure
+Sean Muir
+Steve Hufnagel
+Steve Wagner
+Susan Matney
+William Hess
+
+Updates
+
+Steve mentioned S&I initiative that may be doing NIEM work.
+
+Galen mentioned many of the typical meetings he follows were cancelled due to the Holidays.
+
+Project Argonaut (FHIR for open APIs) was mentioned.
+
+Jay - Terminology Modeling - Vital signs were discussed on Wednesday. They have a a draft definition. Allergy domain value set is coming along.
+
+Modeling Work on Vital Signs
+
+Vital signs are clinical observations. Nothing unique. Only class vital sign has starts with an Observation Statement. <Class> <<Observation>> FHIM::ClinicalObservationsStatement (all have correspondence to a FHIR resource). However, unlike the FHIR resource, Galen added a Provenance class containing who, what, where, and when. Current observation FHIR resource is 4.22.
+
+Galen got qualifiers body-site and method from Intermountain which I believe I heard is also in FHIR. Intermountain also has modifiers which changes the meaning, family history of.
+
+Qualifiers provide meaning whereas modifiers modify that meaning. The FHIM doesn't have modifiers. In the FHIM if something was a modifier it would be modeled as a separate class.
+
+Galen is partial to detailed Clinical Models in UML and would like to do this the the FHIM even though various groups are developing this in many different directions. 
+
+For today it was decided to create the proper enumerations and so forth of Pulse Rate to get the work started.
+
+The question came up as to whether provenance should only be applied to the clinical statement.
+
+Information side of Vital Signs domain should only last about another week, it should go quickly. Terminology side takes longer.
+
+A further Clinical Observation domain may be required. Steve asked the group's opinion. The response was to finish Vital Signs and then address that question at that point.
+
+Systolic and Diastolic vs BP and whether BP should be omitted from the model was discussed.
+
+Vital Sign qualifiers to be further pursued, likely based on Intermountain work.
