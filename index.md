@@ -6,6 +6,8 @@ http://github.com - automatic!
 Some ditch :)
 [DIAGRAM](https://github.com/FHIMS/FHIMDocuments/blob/master/FHIM%20Presentations/FHIM%20Context%20Diagram.pptx?raw=true)
  
+ [WHITE PAPER](https://github.com/FHIMS/FHIMDocuments/blob/master/FHIM%20Coordination/ONC/FhimAndSIFrameworkWhitePaper_0.2.pdf)
+ 
 
 
 You can use the [editor on GitHub](https://github.com/swmuir/TestSplit/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
