@@ -1,0 +1,18 @@
+
+
+AGENDA
+
+FHIM->CIMPL Tooling requirements
+Other FHIM Tooling requirements
+
+New FHIM UML Profile to handle vocab, CIMI, and CIMPL
+
+Things BMM/ADL can do that UML doesn't natively:
+a) bind a uml property to a defining concept (e.g., Person.sex -> SNOMED code) <- uses a uri
+b) bind the range of a (coded) property (e.g., Person.sex) to a value-set (e.g., HITSP administrative gender value set) <- uses a uri
+
+Things CIMPL/CIMCore can do that UML doesn't natively:
+
+
+declaring success:
+ballot Skin&Wound 

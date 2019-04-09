@@ -1,0 +1,9 @@
+
+FHIM's goal is to generate BMM/ADL that is equivalent to CIMI, and to also generate FHIR Profiles
+-- an end-goal is for FHIM to be able to generate CIMI, while keeping to the FHIM modeling style and requirements
+
+In the course of doing so, we're still exercising the distinction between Assertions and Evaluations. Especially when there are "sub-assertions" 
+underneath an EvaluationResult
+
+In so doing, we have some other goals regarding clarifying when we use 
+
